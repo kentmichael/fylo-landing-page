@@ -1,0 +1,56 @@
+@use '../util' as *;
+
+.nav {
+  padding-top: rem(47);
+  padding-bottom: rem(47);
+  margin-bottom: rem(30);
+
+  &__logo {
+    display: inline-block;
+    font-size: 0;
+  }
+
+  &__img {
+    width: rem(130);
+    height: rem(37);
+    
+    @include breakpoint(medium) {
+      width: rem(167);
+      height: rem(49);
+    }
+  }
+
+  &-links {
+    font-size: 0;
+    gap: rem(60);
+
+    @include breakpoint-down(small) {
+      display: none;
+    }
+
+    @include breakpoint(large) {
+      font-size: rem(14);
+    }
+  }
+
+  &-menu {
+
+    * {
+      display: block;
+    }
+
+    span {
+      width: 30px;
+      border: 1px solid hsl(238, 22%, 44%);
+    }
+
+    :not(:last-child) {
+      margin-bottom: 8px;
+    }
+
+    @include breakpoint(medium) {
+      display: none;
+    }
+  }
+
+}

@@ -1,0 +1,126 @@
+@use '../util' as *;
+
+footer {
+  color: var(--white);
+}
+
+//footer 1
+.footer1-bg {
+  background-color: var(--very-dk-blue-opac);
+}
+
+.footer1 {
+  font-family: var(--font-headings);
+
+  > * {
+    flex: 1;
+  }
+
+  @include breakpoint(medium) {
+    text-align: left;
+    flex-direction: row;
+    gap: rem(200);
+  }
+  
+  &__signup {
+    @include breakpoint-down(medium) {
+      margin-bottom: rem(10);
+    }
+  }
+
+  &__label {
+    display: none;
+  }
+
+  &__email {
+    width: 90%;
+    border: none;
+    border-radius: rem(2);
+    padding: rem(10);
+
+    @include breakpoint(large) {
+      margin-bottom: rem(10);
+      width: 100%;
+      padding: rem(15);
+    }
+  }
+
+  &__submit {
+    width: 90%;
+    background-color: var(--bright-blue);
+    padding: rem(10);
+    border: none;
+    border-radius: rem(2);
+    cursor: pointer;
+    color: var(--white);
+    font-weight: bold;
+    transition: background-color 200ms ease-in-out;
+
+    &:hover {
+      background-color: hsl(224, 93%, 65%);;
+    }
+
+    @include breakpoint(large) {
+      width: 40%;
+      padding: rem(15);
+    }
+  }
+}
+
+//footer 2
+.footer2-bg {
+  background-color: var(--very-dk-blue);
+}
+
+.footer2 {
+  text-align: left;
+
+  a {
+    color: var(--white);
+  }
+
+  ul {
+    margin: 0;
+  }
+
+  &-list {
+    list-style-type: none;
+    list-style-position: outside;
+    padding-left: 0;
+    text-align: left;
+    line-height: 2;
+  }
+
+  &__phone::before {
+    content: url('../images/icon-email.svg');
+    margin-right: rem(10);
+  }
+
+  &__email::before {
+    content: url('../images/icon-phone.svg');
+    margin-right: rem(10);
+  }
+
+  &-icon {
+    gap: rem(20);
+    list-style-type: none;
+    list-style-position: outside;
+    padding-left: 0;
+
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: rem(30);
+      height: rem(30);
+      border: rem(1) solid;
+      border-radius: 50%;
+      overflow: hidden;
+
+      a {
+        display: inline-block;
+        padding: rem(10);
+      }
+    }
+  }
+}

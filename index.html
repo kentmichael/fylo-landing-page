@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dist/style.css">
+  <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+  <script src="https://kit.fontawesome.com/2d9f5ba26b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav class="nav container flex flex-row flex-ai-c flex-jc-sb">
+    <a href="#" class="nav__logo">
+      <img src="images/logo.svg" alt="Website Logo" class="nav__img">
+    </a>
+
+    <div class="nav-links flex flex-row flex-jc-sb">
+      <a href="#" class="nav__feature">Features</a><a href="#" class="nav__team">Team</a><a href="#" class="nav__sign">Sign In</a>
+    </div>
+
+    <div class="nav-menu">
+      <a href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="fylo grid container">
+      <div class="grid-item1">
+        <img src="images/illustration-1.svg" alt="Files in one folder" class="fylo__illustration">
+      </div>
+
+      <section class="grid-item2" aria-labelledby="Fylo Introduction">
+        <h1 id="Fylo Introduction" class="fylo__header">All your files in one secure location, accessible anywhere.</h1>
+        <p class="fylo__content">Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.</p>
+        <form class="fylo-form flex flex-col">
+          <label for="email" class="fylo-form__label"></label>
+          <input type="email" name="email" id="email" class="fylo-form__email" placeholder="Enter your email">
+          <input type="submit" value="Get Started" class="fylo-form__submit">
+        </form>
+      </section>
+    </div>
+  
+    <div class="prod-bg">
+      <div class="productivity grid container">
+        <div class="grid-item1">
+          <img src="images/illustration-2.svg" alt="People Collaborating" class="productivity__img">
+        </div>
+    
+        <section class="grid-item2"> 
+          <h2 class="productivity__header">Stay productive, wherever you are</h2>
+          <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
+          <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!</p>
+
+          <div class="productivity-link flex flex-jc-c flex-ai-c">
+            <a href="#" class="productivity__link flex flex-ai-c">
+              <span>See how Fylo works</span>
+              <img src="images/icon-arrow.svg" alt="Arrow Icon" width="26">
+            </a>
+          </div>
+
+          <div class="productivity-card">
+            <img src="images/icon-quotes.svg" alt="Qoutes Icon">
+            <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+            <div class="productivity-card-username flex flex-ai-c">
+              <div>
+                <img src="images/avatar-testimonial.jpg" alt="User Avatar">
+              </div>
+              <div>
+                <span>Kyle Burton</span><br>Founder & CEO, Huddle
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <div class="footer1-bg">
+      <div class="footer1 container container-footer flex flex-col flex-ai-c">
+        <section class="footer1__signup flex-item1">
+          <h2>Get early access today</h2>
+          <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
+        </section>
+        
+        <div class="flex-item2">
+          <form>
+            <label for="email-footer1" class="footer1__label"></label>
+            <input type="email" name="email-access" id="email-footer1" placeholder="email@example.com" class="footer1__email">
+            <input type="submit" value="Get Started For Free" class="footer1__submit">
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer2-bg">
+      <div class="footer2 container container-footer grid-footer">
+        <div class="grid-footer-item1">
+          <img src="images/logo-lt.svg" alt="Website Logo">
+          <ul class="footer2-list">
+            <li class="footer2__phone">Phone: +1-543-123-4567</li>
+            <li class="footer2__email">example@fylo.com</li>
+          </ul>
+        </div>
+
+        <div class="grid-footer-item2">
+          <ul class="footer2-list">
+            <li><a href="#" class="footer2__links">About Us</a></li>
+            <li><a href="#" class="footer2__links">Jobs</a></li>
+            <li><a href="#" class="footer2__links">Press</a></li>
+            <li><a href="#" class="footer2__links">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="grid-footer-item3">
+          <ul class="footer2-list">
+            <li><a href="#" class="footer2__links">Contact Us</a></li>
+            <li><a href="#" class="footer2__links">Terms</a></li>
+            <li><a href="#" class="footer2__links">Privacy</a></li>
+          </ul>
+        </div>
+
+        <div class="grid-footer-item4">
+          <ul class="footer2-icon flex flex-row flex-jc-c">
+            <li><a href="#" class="fa-brands fa-facebook-f footer2__icons"></a></li>
+            <li><a href="#" class="fa-brands fa-twitter footer2__icons"></a></li>
+            <li><a href="#" class="fa-brands fa-instagram footer2__icons"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

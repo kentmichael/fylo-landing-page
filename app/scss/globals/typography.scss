@@ -1,0 +1,22 @@
+@use '../util' as *;
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  line-height: 1.3;
+  font-weight: 700;
+  font-family: var(--font-headings);
+
+  @include breakpoint(medium) {
+    font-family: var(--font-headings);
+  }
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color:  var(--very-dk-blue);
+  font-family: var(--font-headings);
+}

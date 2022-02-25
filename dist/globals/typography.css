@@ -1,0 +1,2 @@
+h1,h2,h3{font-family:var(--font-headings);font-weight:700;line-height:1.3;margin-top:0}@media (min-width:40em){h1,h2,h3{font-family:var(--font-headings)}}a,a:active,a:visited{color:var(--very-dk-blue);font-family:var(--font-headings);text-decoration:none}
+/*# sourceMappingURL=typography.css.map */
