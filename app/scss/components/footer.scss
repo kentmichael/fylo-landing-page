@@ -37,9 +37,9 @@ footer {
     border: none;
     border-radius: rem(2);
     padding: rem(10);
+    margin-bottom: rem(10);
 
     @include breakpoint(large) {
-      margin-bottom: rem(10);
       width: 100%;
       padding: rem(15);
     }
